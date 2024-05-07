@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Susanta Resume</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.html">
   </head>
   <body>
       
@@ -18,11 +19,12 @@
         <div>
           <nav>
             <ul class="flex gap-16 font-extralight text-[20px]">
-              <a href="https://github.com/susantaaji/Real-Estate-Project"><li>Real-Estate-Project</li></a>
-              <a href="https://github.com/susantaaji/susanta7up.ych"><li>7up Project</li></a>
-              <a href="https://github.com/susantaaji/ych.icecream"><li>Icecream Web</li></a>
-              <a href="https://github.com/susantaaji/Bridal-Makeup"><li>Bridal Web</li></a>
-              <a href="https://github.com/susantaaji/tailwinddesktopversion"><li>Desktop Web</li></a>
+              <a href="https://github.com/susantaaji/Real-Estate-Project" class="hover:text-yellow-200 face2 font-bold"><li>Real-Estate-Project</li></a>
+              <a href="https://github.com/susantaaji/susanta7up.ych" class="hover:text-yellow-200 face2 font-bold"><li>7up Project</li></a>
+              <a href="https://github.com/susantaaji/ych.icecream" class="hover:text-yellow-200 face2 font-bold"><li>Icecream Web</li></a>
+              <a href="https://github.com/susantaaji/Bridal-Makeup" class="hover:text-yellow-200 face2 font-bold"><li>Bridal Web</li></a>
+              <a href="https://github.com/susantaaji/tailwinddesktopversion" class="hover:text-yellow-200 face2 font-bold"><li>Desktop Web</li></a>
+              <a href="about.html" class="hover:text-yellow-200 face2 font-bold"><li>Login</li></a>
             </ul>
           </nav>
         </div>
@@ -35,8 +37,8 @@
             Your Partner in <br> 
             Digital Success
           </h1> <br> <br>
-          <button class="bg-orange-700 h-10 w-32 font-bold rounded-lg text-white hover:bg-cyan-900">Click me</button>
-          <button class="bg-cyan-700 h-10 w-32 font-bold rounded-lg text-white hover:bg-orange-900">Info</button>
+          <a href="#log"><button class="bg-orange-700 h-10 w-32 font-bold rounded-lg text-white hover:bg-cyan-900">FeedBack</button></a>
+          <a href="#det"><button class="bg-cyan-700 h-10 w-32 font-bold rounded-lg text-white hover:bg-orange-900">Skills</button></a>
         </div>
         <div>
           <img src="suasnta1.jpg" class="face md:w-32 lg:w-48 rounded-lg m-10" alt="">
@@ -88,9 +90,9 @@
               <h1>✅ Cover:- cortric Focus</h1>
             </div>
             <div>
-              <h1>✅ Innovationtiv</h1>
-              <h1> ✅ Frandle</h1>
-              <h1>✅ Resable Parthnern </h1>
+              <h1>✅ Innovationtive</h1>
+              <h1> ✅ Photo/video Editing</h1>
+              <h1>✅ Frelencer </h1>
             </div>
           </div>
         </div>
@@ -109,7 +111,7 @@
     <hr class="">
 <!-- third section end  -->
 <!-- box section start -->
-
+ <section class="fo" >
     <div class="flex justify-around bg-black text-white p-10 ">
       <div class="border-2 border-red-300 text-center h-96 w-3/2">01
         <h1 class="text-[30px] font-bold">WordPress Website <br>
@@ -177,7 +179,7 @@
           </p>
       </div>
     </div>
-
+  
     <!-- -------------------------------------------------------3--------------------------------------- -->
     <div class="flex justify-around bg-black text-white p-10">
       <div class="border-2 border-red-300 text-center h-96 w-3/2">05
@@ -213,11 +215,12 @@
           </p>
       </div>
     </div>
+  </section>
 <!-- box section end -->
 
 <!-- my skill section start -->
 <hr>
-    <section class="bg-black flex justify-around p-10">
+    <section class="im bg-black flex justify-around p-10" id="det">
       <div class="text-white">
         <h1 class="text-[40px] font-bold">My Skills 👉</h1>
         <p class="text-[30px] font-bold p-5 ">
@@ -345,7 +348,7 @@
 <!-- purches section end -->
  <hr>
 <!-- footer section start -->
-    <section class="bg-black text-white flex justify-around p-10">
+    <section class="bg-black text-white flex justify-around p-10 transition ease-in duration-75" id="log">
       <div>
         <h1 class="font-bold text-[40px] font-serif">Get In Touch <br></h1> <br>
         <p class="font-bold text-[20px]">Let's Talk About Your</p>
@@ -355,37 +358,38 @@
         <p>✅ Prever video record</p> <br>
         <p>✅ Innactive solution</p>
       </div>
-      <div class="">
+      <form action="" >
         <div class="mt-10 grid grid-cols-1 gap-x-36 gap-y-8 sm:grid-cols-6">
           <div class="sm:col-span-3">
-            <label for="first-name" class="block leading-6 text-[20px]">First name</label>
+            <label for="first-name" class="block leading-6 text-[20px]">First name:</label>
             <div class="mt-2">
               <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-2 border-orange-600 py-1.5 text-white-900 shadow-sm ring-1 ring-inset bg-black placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
   
           <div class="sm:col-span-3">
-            <label for="last-name" class="block leading-6 text-[20px]">Last name</label>
+            <label for="last-name" class="block leading-6 text-[20px]">Last name:</label>
             <div class="mt-2">
               <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block  w-full rounded-md border-2 border-orange-600 py-1.5 text-white-900 bg-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
   
           <div class="sm:col-span-6">
-            <label for="email" class="block leading-6 text-[20px]">Email address</label>
+            <label for="email" class="block leading-6 text-[20px]">Email address:</label>
             <div class="mt-2">
               <input id="email" name="email" type="email" autocomplete="email" class="block border-orange-600 w-full rounded-md border-2 py-1.5 shadow-sm ring-1 ring-inset bg-black ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
-          <div class="sm:col-span-6">
-            <label for="email" class="block leading-6 text-[20px]">AnyMessage</label>
+          <div class="sm:col-span-6" id="myForm">
+            <label for="email" class="block leading-6 text-[20px]">Feedback Pls:</label>
             <div class="mt-2">
               <!-- <input id="email" name="email" type="email" autocomplete="email" class="block  w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"> -->
               <textarea name="" id="" cols="100" rows="5" class="border-2 bg-black text-white border-orange-600"></textarea>
             </div>
             <button class="face bg-orange-600 h-14 w-36 m-3 rounded-l text-[20px] font-bold hover:bg-green-800">SUBMIT</button>
           </div>
-      </div>
+        </div>
+      </form>
     </section>
 <!-- footer section end -->
     <script type="module" src="/main.js"></script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="index.html">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #443f3f;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #302b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 150px red;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+  
+  .form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 4px solid rgb(49, 49, 184);
+  }
+  
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    border: 4px solid rgb(49, 49, 184);
+  }
+  
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #160465;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      margin: 20px;
+      border-radius:0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-white font-serif font-bold text-[30px] text-center">-Registration Form-</h2>
+  <form action="#" method="post" id="myForm">
+    <div class="form-group">
+      <label for="name" class="text-white" >Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" class="text-white">College Name:</label>
+      <input type="text" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="email" class="text-white">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message" class="text-white">Message:</label>
+      <textarea id="message" name="message" rows="2" required></textarea>
+    </div>
+    <div class="flex items-center gap-x-3">
+      <input id="push-everything" name="push-notifications" type="radio" class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+      <label for="push-everything" class="block font-bold text-[15px]  leading-6 text-white font-serif" required>BCA</label>
+    </div>
+    <div class="flex items-center gap-x-3">
+      <input id="push-everything" name="push-notifications" type="radio" class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+      <label for="push-everything" class="block font-bold text-[15px]  leading-6 text-white font-serif" required>BBA</label>
+    </div>
+    <div class="flex items-center gap-x-3">
+      <input id="push-everything" name="push-notifications" type="radio" class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+      <label for="push-everything" class="block font-bold text-[15px]  leading-6 text-white font-serif" required>BHM in Hospitality</label>
+    </div>
+    <div class="flex items-center gap-x-3">
+      <input id="push-everything" name="push-notifications" type="radio" class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+      <label for="push-everything" class="block font-bold text-[15px]  leading-6 text-white font-serif" required>BBA in Hotel Menegment</label>
+    </div>
+    <a href="index.html"><button class="bg-green-400 h-10 w-32 font-bold rounded-lg text-white hover:bg-green-900 m-4">Submit</button></a>
+  </form>
+  <div class="form-groupp relative bottom-20 m-2 left-64">
+    <a href="index.html"><button class="bg-yellow-500 h-10 w-32 font-bold rounded-lg text-white hover:bg-orange-900 m-4">Back</button></a>
+  </div>
+</div>
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(even) {
+    even.preventDefault();
+    alert('Your Form is Submitted');
+});
+
+
+</script>
+</body>
+</html>
